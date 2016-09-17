@@ -8,8 +8,14 @@
 
 import UIKit
 
-class FeedbackViewController: UIViewController {
+class FeedbackViewController: BaseViewController {
 
+    @IBOutlet weak var emailAddress: UITextField!
+    @IBOutlet weak var phoneNumber: UITextField!
+    
+    
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var detailDescription: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +27,10 @@ class FeedbackViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
+    @IBAction func clickedOnSubmit(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 

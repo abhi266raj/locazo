@@ -9,13 +9,56 @@
 import UIKit
 import FZAccordionTableView
 
-class ServiceTableViewController: UITableViewController,FZAccordionTableViewDelegate{
-    static private let kTableViewCellReuseIdentifier = "TableViewCellReuseIdentifier"
+
+//var selectionState:[[Bool]] = Array(repeating: Array(repeating: false, count: 10), count: ServiceTableViewController.serviceList.count);
+
+class BlogsTableViewController: UITableViewController,FZAccordionTableViewDelegate{
+    static fileprivate let kTableViewCellReuseIdentifier = "TableViewCellReuseIdentifier"
+    static let serviceList = ["Personal Services",
+                              "Home Care & Services",
+                              "Repair & Maintenance"
+    ];
+    
+    static let serviceName = [
+        ["Car cleaning","Packers & Movers",
+            "Baby & Kids Photographer",
+            "Maternity Photographer",
+            "CCTV Dealer",
+            "CA for Small Businesses",
+            "Company Registration"
+],
+        ["Pest Control",
+            "Cleaning",
+            "Carpet Cleaning",
+            "Home Deep Cleaning",
+            "Basic Bathroom Cleaning",
+            "Bathroom Deep Cleaning",
+            "Kitchen Deep Cleaning",
+            "Construction & Renovation"
+],
+        ["Electrician",
+            "Plumber",
+            "Mobile Repair",
+            "AC Service and Repair",
+            "Laptop Repair",
+            "Refrigerator Repair",
+            "Washing Machine Repair",
+            "Carpenter"
+]
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addAppSpecificRightBar()
+        self.edgesForExtendedLayout =  []
        // tableView.registerClass(AccordionHeaderView.classForCoder(), forHeaderFooterViewReuseIdentifier: AccordionHeaderView.kAccordionHeaderViewReuseIdentifier)
-       tableView.registerNib(UINib(nibName: "AccordionHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: AccordionHeaderView.kAccordionHeaderViewReuseIdentifier)
+       tableView.register(UINib(nibName: "AccordionHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: AccordionHeaderView.kAccordionHeaderViewReuseIdentifier)
+        //tableView.allowsMultipleSelection = true;
+     
+//            //tableView.keepOneSectionOpen = true;
+//            tableView.initialOpenSections = NSSet(array: [0]) as? Set<NSNumber>
+//        }
 //        let inset:CGFloat = 70
 //        tableView.contentInset = UIEdgeInsetsMake(inset, 0, 0, 0);
 //        let label = UILabel(frame: CGRectMake(30,-inset,tableView.frame.size.width,80));
@@ -49,51 +92,57 @@ class ServiceTableViewController: UITableViewController,FZAccordionTableViewDele
 //    }
     
     
-    func tableView(tableView: FZAccordionTableView, canInteractWithHeaderAtSection section: Int) -> Bool{
+    func tableView(_ tableView: FZAccordionTableView, canInteractWithHeaderAtSection section: Int) -> Bool{
         return true;
     }
     
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1;
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 5;
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return BlogsTableViewController.serviceList.count;
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44.0;
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return AccordionHeaderView.kDefaultAccordionHeaderViewHeight
     }
     
-    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return self.tableView(tableView, heightForRowAtIndexPath: indexPath)
-    }
+  
     
-    override func tableView(tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return self.tableView(tableView, heightForHeaderInSection:section)
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(ServiceTableViewController.kTableViewCellReuseIdentifier, forIndexPath: indexPath)
-        cell.textLabel!.text = "Cell"
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: BlogsTableViewController.kTableViewCellReuseIdentifier, for: indexPath)
+        cell.textLabel!.text = BlogsTableViewController.serviceName[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row];
+//        if (selectionState[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row] == true){
+//        tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+//            cell.accessoryType = .checkmark
+//        }else{
+//            cell.accessoryType = .none
+//        }
+////        cell.highlighted = selectionState[indexPath.section][indexPath.row]
         return cell
     }
     
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if let headerView =  tableView.dequeueReusableHeaderFooterViewWithIdentifier(AccordionHeaderView.kAccordionHeaderViewReuseIdentifier) as? AccordionHeaderView{
-            headerView.text.text = "Abcd"
-            headerView.imageView.image = UIImage(named:"1");
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if let headerView =  tableView.dequeueReusableHeaderFooterView(withIdentifier: AccordionHeaderView.kAccordionHeaderViewReuseIdentifier) as? AccordionHeaderView{
+            headerView.text.text = BlogsTableViewController.serviceList[section];
+            //headerView.imageView.image = UIImage(named:"1");
             return headerView;
         }
         return nil;
     }
     
-
+    
+   
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)

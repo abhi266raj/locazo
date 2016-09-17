@@ -10,11 +10,13 @@ import UIKit
 
 class ImageViewController: UIViewController {
     var imageView:UIImageView = UIImageView()
+    var imageContetMode:UIViewContentMode = .scaleAspectFill
     var imageIndex:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         //imageView = UIImageView.init();
         self.view = imageView;
+        imageView.contentMode = imageContetMode
         
         // Do any additional setup after loading the view.
     }

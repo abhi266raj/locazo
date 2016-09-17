@@ -8,11 +8,11 @@
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
+class AboutUsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //self.navigationController
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +21,13 @@ class AboutUsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBOutlet weak var done: UIButton!
+    
+    
+    @IBAction func done(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil);
+    }
 
     /*
     // MARK: - Navigation

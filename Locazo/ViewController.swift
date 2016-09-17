@@ -10,7 +10,7 @@ import UIKit
 import SlideMenuControllerSwift
 
 class ViewController: SlideMenuController {
-
+    //var mainController:UIViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,25 +22,32 @@ class ViewController: SlideMenuController {
     }
     
     override func awakeFromNib() {
-        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("Nav") {
+        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "Nav") {
             self.mainViewController = controller
             
             
+            
         }
-        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier(
-            "SideTable")
-        //"Nav2")
+        if let controller = self.storyboard?.instantiateViewController(
+            //    "SideTable")
+            withIdentifier: "Nav2")
         {
             self.rightViewController = controller
         }
         super.awakeFromNib()
     }
     
+    
+    
+    
+
+    
+    
 }
 
 extension UIViewController{
     func addAppSpecificRightBar(){
-       self.addRightBarButtonWithImage(UIImage(named: "a")!)
+       self.addRightBarButtonWithImage(UIImage(named: "hambug")!)
     }
 }
 

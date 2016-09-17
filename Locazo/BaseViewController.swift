@@ -1,20 +1,19 @@
 //
-//  HomeViewController.swift
+//  BaseViewController.swift
 //  Locazo
 //
-//  Created by Abhiraj Kumar on 9/12/16.
+//  Created by Abhiraj Kumar on 9/17/16.
 //  Copyright © 2016 Locazo. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Locazo"
-       
-
+        self.addAppSpecificRightBar()
+        self.edgesForExtendedLayout =  []
         // Do any additional setup after loading the view.
     }
 
@@ -23,18 +22,12 @@ class HomeViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    override func targetViewController(forAction action: Selector, sender: Any?) -> UIViewController? {
-//        return self
-//        //return nil;
-//    }
-    
-        
 
     /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

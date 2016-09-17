@@ -19,10 +19,19 @@
 		3A6CB4EE1D86AE3C00FF64BE /* BlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CB4ED1D86AE3C00FF64BE /* BlogsViewController.swift */; };
 		3A6CB4F01D86AE4800FF64BE /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CB4EF1D86AE4800FF64BE /* AboutUsViewController.swift */; };
 		3A6CB4F21D86AE6A00FF64BE /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CB4F11D86AE6A00FF64BE /* FeedbackViewController.swift */; };
+		3A6CB4F41D86BA2500FF64BE /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CB4F31D86BA2500FF64BE /* SideBarTableViewController.swift */; };
 		3A8348ED1D85E7510080CDE2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8348EC1D85E7510080CDE2 /* HomeViewController.swift */; };
-		3A8348EF1D8688440080CDE2 /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8348EE1D8688440080CDE2 /* ServiceTableViewController.swift */; };
+		3A8348EF1D8688440080CDE2 /* BlogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8348EE1D8688440080CDE2 /* BlogsTableViewController.swift */; };
 		3A8348F11D868B000080CDE2 /* AccordionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8348F01D868B000080CDE2 /* AccordionHeaderView.swift */; };
 		3A8348F31D8696AC0080CDE2 /* AccordionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8348F21D8696AC0080CDE2 /* AccordionHeaderView.xib */; };
+		3AD634D01D8DDB84000481DC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD634CF1D8DDB84000481DC /* NavigationController.swift */; };
+		3AF1D6E31D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6E21D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift */; };
+		3AF1D6E61D8D505500AF99A3 /* CustomerReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6E41D8D505500AF99A3 /* CustomerReviewViewController.swift */; };
+		3AF1D6E71D8D505500AF99A3 /* CustomerReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF1D6E51D8D505500AF99A3 /* CustomerReviewViewController.xib */; };
+		3AF1D6E91D8D747B00AF99A3 /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6E81D8D747B00AF99A3 /* UserDetailModel.swift */; };
+		3AF1D6EB1D8D86FA00AF99A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6EA1D8D86FA00AF99A3 /* BaseViewController.swift */; };
+		3AF1D6ED1D8DA52900AF99A3 /* ServiceListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6EC1D8DA52900AF99A3 /* ServiceListCollectionViewController.swift */; };
+		3AF1D6EF1D8DAF5300AF99A3 /* ServiceListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6EE1D8DAF5300AF99A3 /* ServiceListCollectionViewCell.swift */; };
 		8AA20D41427319610A91E6C1 /* Pods_Locazo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4F7E6E675FF50E782E267E /* Pods_Locazo.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +50,19 @@
 		3A6CB4ED1D86AE3C00FF64BE /* BlogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogsViewController.swift; sourceTree = "<group>"; };
 		3A6CB4EF1D86AE4800FF64BE /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		3A6CB4F11D86AE6A00FF64BE /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		3A6CB4F31D86BA2500FF64BE /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 		3A8348EC1D85E7510080CDE2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		3A8348EE1D8688440080CDE2 /* ServiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewController.swift; sourceTree = "<group>"; };
+		3A8348EE1D8688440080CDE2 /* BlogsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogsTableViewController.swift; sourceTree = "<group>"; };
 		3A8348F01D868B000080CDE2 /* AccordionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionHeaderView.swift; sourceTree = "<group>"; };
 		3A8348F21D8696AC0080CDE2 /* AccordionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccordionHeaderView.xib; sourceTree = "<group>"; };
+		3AD634CF1D8DDB84000481DC /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		3AF1D6E21D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerReviewPageViewController.swift; sourceTree = "<group>"; };
+		3AF1D6E41D8D505500AF99A3 /* CustomerReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerReviewViewController.swift; sourceTree = "<group>"; };
+		3AF1D6E51D8D505500AF99A3 /* CustomerReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerReviewViewController.xib; sourceTree = "<group>"; };
+		3AF1D6E81D8D747B00AF99A3 /* UserDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		3AF1D6EA1D8D86FA00AF99A3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3AF1D6EC1D8DA52900AF99A3 /* ServiceListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceListCollectionViewController.swift; sourceTree = "<group>"; };
+		3AF1D6EE1D8DAF5300AF99A3 /* ServiceListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceListCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1C421FF818D222288166DB1 /* Pods-Locazo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locazo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Locazo/Pods-Locazo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC4F7E6E675FF50E782E267E /* Pods_Locazo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Locazo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD06C546F39E157B7A0E6B90 /* Pods-Locazo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locazo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locazo/Pods-Locazo.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,19 +101,28 @@
 		3A3DF2051D85A5FA00AE4440 /* Locazo */ = {
 			isa = PBXGroup;
 			children = (
-				3A8348F21D8696AC0080CDE2 /* AccordionHeaderView.xib */,
 				3A3DF2061D85A5FA00AE4440 /* AppDelegate.swift */,
+				3A8348F21D8696AC0080CDE2 /* AccordionHeaderView.xib */,
+				3A8348F01D868B000080CDE2 /* AccordionHeaderView.swift */,
+				3A8348EE1D8688440080CDE2 /* BlogsTableViewController.swift */,
 				3A3DF2081D85A5FA00AE4440 /* ViewController.swift */,
 				3A3DF20A1D85A5FA00AE4440 /* Main.storyboard */,
+				3AF1D6EE1D8DAF5300AF99A3 /* ServiceListCollectionViewCell.swift */,
+				3AF1D6EC1D8DA52900AF99A3 /* ServiceListCollectionViewController.swift */,
+				3AF1D6E81D8D747B00AF99A3 /* UserDetailModel.swift */,
 				3A6CB4F11D86AE6A00FF64BE /* FeedbackViewController.swift */,
 				3A6CB4ED1D86AE3C00FF64BE /* BlogsViewController.swift */,
+				3A6CB4F31D86BA2500FF64BE /* SideBarTableViewController.swift */,
 				3A6CB4EF1D86AE4800FF64BE /* AboutUsViewController.swift */,
 				3A6CB4E91D86A3A400FF64BE /* UserDetailPage1ViewController.swift */,
 				3A6CB4EB1D86A58400FF64BE /* UserDetailPage2Controller.swift */,
-				3A8348EE1D8688440080CDE2 /* ServiceTableViewController.swift */,
-				3A8348F01D868B000080CDE2 /* AccordionHeaderView.swift */,
 				3A8348EC1D85E7510080CDE2 /* HomeViewController.swift */,
+				3AD634CF1D8DDB84000481DC /* NavigationController.swift */,
+				3AF1D6EA1D8D86FA00AF99A3 /* BaseViewController.swift */,
 				3A3DF2181D85BE4200AE4440 /* PageViewController.swift */,
+				3AF1D6E21D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift */,
+				3AF1D6E41D8D505500AF99A3 /* CustomerReviewViewController.swift */,
+				3AF1D6E51D8D505500AF99A3 /* CustomerReviewViewController.xib */,
 				3A3DF21A1D85C1CA00AE4440 /* ImageViewController.swift */,
 				3A3DF20D1D85A5FA00AE4440 /* Assets.xcassets */,
 				3A3DF20F1D85A5FA00AE4440 /* LaunchScreen.storyboard */,
@@ -156,6 +183,7 @@
 				TargetAttributes = {
 					3A3DF2021D85A5FA00AE4440 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -182,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF1D6E71D8D505500AF99A3 /* CustomerReviewViewController.xib in Resources */,
 				3A3DF2111D85A5FA00AE4440 /* LaunchScreen.storyboard in Resources */,
 				3A3DF20E1D85A5FA00AE4440 /* Assets.xcassets in Resources */,
 				3A8348F31D8696AC0080CDE2 /* AccordionHeaderView.xib in Resources */,
@@ -244,16 +273,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A8348EF1D8688440080CDE2 /* ServiceTableViewController.swift in Sources */,
+				3AF1D6E61D8D505500AF99A3 /* CustomerReviewViewController.swift in Sources */,
+				3A8348EF1D8688440080CDE2 /* BlogsTableViewController.swift in Sources */,
 				3A8348F11D868B000080CDE2 /* AccordionHeaderView.swift in Sources */,
+				3AF1D6E91D8D747B00AF99A3 /* UserDetailModel.swift in Sources */,
+				3AF1D6ED1D8DA52900AF99A3 /* ServiceListCollectionViewController.swift in Sources */,
 				3A8348ED1D85E7510080CDE2 /* HomeViewController.swift in Sources */,
 				3A3DF2191D85BE4200AE4440 /* PageViewController.swift in Sources */,
 				3A3DF2091D85A5FA00AE4440 /* ViewController.swift in Sources */,
+				3AF1D6EF1D8DAF5300AF99A3 /* ServiceListCollectionViewCell.swift in Sources */,
+				3AF1D6EB1D8D86FA00AF99A3 /* BaseViewController.swift in Sources */,
 				3A6CB4EA1D86A3A400FF64BE /* UserDetailPage1ViewController.swift in Sources */,
+				3A6CB4F41D86BA2500FF64BE /* SideBarTableViewController.swift in Sources */,
+				3AF1D6E31D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift in Sources */,
 				3A6CB4EE1D86AE3C00FF64BE /* BlogsViewController.swift in Sources */,
 				3A6CB4F21D86AE6A00FF64BE /* FeedbackViewController.swift in Sources */,
 				3A3DF21B1D85C1CA00AE4440 /* ImageViewController.swift in Sources */,
 				3A6CB4EC1D86A58400FF64BE /* UserDetailPage2Controller.swift in Sources */,
+				3AD634D01D8DDB84000481DC /* NavigationController.swift in Sources */,
 				3A6CB4F01D86AE4800FF64BE /* AboutUsViewController.swift in Sources */,
 				3A3DF2071D85A5FA00AE4440 /* AppDelegate.swift in Sources */,
 			);
@@ -375,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Locazo.Locazo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -387,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Locazo.Locazo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
