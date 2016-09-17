@@ -1,0 +1,6 @@
+framework module Pods_Locazo {
+  umbrella header "Pods-Locazo-umbrella.h"
+
+  export *
+  module * { export * }
+}

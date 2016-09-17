@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.0.0)
+  - FZAccordionTableView (0.2.3)
+  - SlideMenuControllerSwift (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - FZAccordionTableView (~> 0.2.3)
+  - SlideMenuControllerSwift
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  FZAccordionTableView: e64f49c71c32d750feda14025b088bcd25d1a71f
+  SlideMenuControllerSwift: 9c0a84f9a3fba51681debd7be77617094562ebcc
+
+PODFILE CHECKSUM: 37a62b3c95da266b364b0240f6af37f422348e91
+
+COCOAPODS: 1.0.1

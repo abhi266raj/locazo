@@ -8,10 +8,27 @@
 
 import UIKit
 
-class UserDetailPage2Controller: UIViewController {
+class UserDetailPage2Controller: BaseViewController {
+
+    
+    
+    @IBOutlet weak var suburbName: UITextField!
+    
+    @IBOutlet weak var houseNumber: UITextField!
+    
+    @IBOutlet weak var emailAddress: UITextField!
+    
+    @IBOutlet weak var date: UITextField!
+    
+    
+    @IBOutlet weak var time: UITextField!
+    
+    
+    var model = UserDetailModel.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +36,43 @@ class UserDetailPage2Controller: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    self.updateDataFromModel()
+    }
+
+
+    func updateDataFromModel(){
+        
+        if let text = model.suburbName{
+            self.suburbName.text = text
+        }
+        if let text = model.houseNo{
+            self.houseNumber.text = text
+        }
+        if let text = model.date{
+            self.date.text = text
+        }
+        if let text = model.time{
+            self.time.text = text
+        }
+        if let text = model.email{
+            self.emailAddress.text = text
+        }
+
+    
+}
+
+    
+    @IBAction func nextButtonClicked(_ sender: UIButton) {
+        model.suburbName = self.suburbName.text
+        model.houseNo =  self.houseNumber.text
+        model.date = self.date.text
+        model.time = self.time.text
+        model.email = self.emailAddress.text
     }
     
 

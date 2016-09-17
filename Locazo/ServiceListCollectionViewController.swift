@@ -45,19 +45,32 @@ var selectionState:[Bool] = Array(repeating: false, count: serviceName.count)
 
 
 
-class ServiceListCollectionViewController: UICollectionViewController {
 
+class ServiceListCollectionViewController:UICollectionViewController
+,UICollectionViewDelegateFlowLayout
+{
+
+   // var collectionView:UICollectionView = UICollectionView()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addAppSpecificRightBar()
         self.edgesForExtendedLayout =  []
-        self.collectionView!.allowsMultipleSelection = true;
-        self.collectionView!.allowsSelection = true;
+       // self.collectionView.allowsMultipleSelection = true;
+//        self.collectionView.allowsMultipleSelection = true;
+        
+        self.collectionViewLayout.collectionView?.allowsMultipleSelection = true;
+        self.collectionViewLayout.collectionView?.allowsSelection = true;
+//        if let collectionView = self.view as? UICollectionView{
+//        self.collectionViewLayout.collectionView?.allowsMultipleSelection = true;
+//        self.collectionViewLayout.collectionView?.allowsSelection = true;
+//        }else{
+//            
+//        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+       // self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         if let layout = self.collectionViewLayout as?UICollectionViewFlowLayout{
             layout.sectionFootersPinToVisibleBounds = true;
             layout.sectionHeadersPinToVisibleBounds = true;
@@ -65,8 +78,6 @@ class ServiceListCollectionViewController: UICollectionViewController {
         }else{
             
         }
-//        self.collectionViewLayout.sectionFootersPinToVisibleBounds = true
-        //self.collectionView.regis
 
         // Do any additional setup after loading the view.
     }
@@ -89,7 +100,7 @@ class ServiceListCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+       
         return 1
     }
 
@@ -143,7 +154,15 @@ class ServiceListCollectionViewController: UICollectionViewController {
 //    }
     
 
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width/3 - 3 , height: 125)
+        
+    }
     
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize()
+//    }
+//    
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectionState[indexPath.row] = true

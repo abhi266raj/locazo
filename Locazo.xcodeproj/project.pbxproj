@@ -24,7 +24,9 @@
 		3A8348EF1D8688440080CDE2 /* BlogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8348EE1D8688440080CDE2 /* BlogsTableViewController.swift */; };
 		3A8348F11D868B000080CDE2 /* AccordionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8348F01D868B000080CDE2 /* AccordionHeaderView.swift */; };
 		3A8348F31D8696AC0080CDE2 /* AccordionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A8348F21D8696AC0080CDE2 /* AccordionHeaderView.xib */; };
+		3AC013881D8DF82700AEFE88 /* Collect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC013871D8DF82700AEFE88 /* Collect.swift */; };
 		3AD634D01D8DDB84000481DC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD634CF1D8DDB84000481DC /* NavigationController.swift */; };
+		3AD634D21D8DE1D9000481DC /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD634D11D8DE1D9000481DC /* PrivacyPolicyViewController.swift */; };
 		3AF1D6E31D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6E21D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift */; };
 		3AF1D6E61D8D505500AF99A3 /* CustomerReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D6E41D8D505500AF99A3 /* CustomerReviewViewController.swift */; };
 		3AF1D6E71D8D505500AF99A3 /* CustomerReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF1D6E51D8D505500AF99A3 /* CustomerReviewViewController.xib */; };
@@ -55,7 +57,9 @@
 		3A8348EE1D8688440080CDE2 /* BlogsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogsTableViewController.swift; sourceTree = "<group>"; };
 		3A8348F01D868B000080CDE2 /* AccordionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionHeaderView.swift; sourceTree = "<group>"; };
 		3A8348F21D8696AC0080CDE2 /* AccordionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccordionHeaderView.xib; sourceTree = "<group>"; };
+		3AC013871D8DF82700AEFE88 /* Collect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collect.swift; sourceTree = "<group>"; };
 		3AD634CF1D8DDB84000481DC /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		3AD634D11D8DE1D9000481DC /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		3AF1D6E21D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerReviewPageViewController.swift; sourceTree = "<group>"; };
 		3AF1D6E41D8D505500AF99A3 /* CustomerReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerReviewViewController.swift; sourceTree = "<group>"; };
 		3AF1D6E51D8D505500AF99A3 /* CustomerReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerReviewViewController.xib; sourceTree = "<group>"; };
@@ -107,8 +111,10 @@
 				3A8348EE1D8688440080CDE2 /* BlogsTableViewController.swift */,
 				3A3DF2081D85A5FA00AE4440 /* ViewController.swift */,
 				3A3DF20A1D85A5FA00AE4440 /* Main.storyboard */,
+				3AD634D11D8DE1D9000481DC /* PrivacyPolicyViewController.swift */,
 				3AF1D6EE1D8DAF5300AF99A3 /* ServiceListCollectionViewCell.swift */,
 				3AF1D6EC1D8DA52900AF99A3 /* ServiceListCollectionViewController.swift */,
+				3AC013871D8DF82700AEFE88 /* Collect.swift */,
 				3AF1D6E81D8D747B00AF99A3 /* UserDetailModel.swift */,
 				3A6CB4F11D86AE6A00FF64BE /* FeedbackViewController.swift */,
 				3A6CB4ED1D86AE3C00FF64BE /* BlogsViewController.swift */,
@@ -178,7 +184,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Locazo;
 				TargetAttributes = {
 					3A3DF2021D85A5FA00AE4440 = {
@@ -288,8 +294,10 @@
 				3AF1D6E31D8D4ECC00AF99A3 /* CustomerReviewPageViewController.swift in Sources */,
 				3A6CB4EE1D86AE3C00FF64BE /* BlogsViewController.swift in Sources */,
 				3A6CB4F21D86AE6A00FF64BE /* FeedbackViewController.swift in Sources */,
+				3AD634D21D8DE1D9000481DC /* PrivacyPolicyViewController.swift in Sources */,
 				3A3DF21B1D85C1CA00AE4440 /* ImageViewController.swift in Sources */,
 				3A6CB4EC1D86A58400FF64BE /* UserDetailPage2Controller.swift in Sources */,
+				3AC013881D8DF82700AEFE88 /* Collect.swift in Sources */,
 				3AD634D01D8DDB84000481DC /* NavigationController.swift in Sources */,
 				3A6CB4F01D86AE4800FF64BE /* AboutUsViewController.swift in Sources */,
 				3A3DF2071D85A5FA00AE4440 /* AppDelegate.swift in Sources */,
@@ -332,8 +340,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -378,8 +388,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -398,6 +410,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -407,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1C421FF818D222288166DB1 /* Pods-Locazo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Locazo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD06C546F39E157B7A0E6B90 /* Pods-Locazo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Locazo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
